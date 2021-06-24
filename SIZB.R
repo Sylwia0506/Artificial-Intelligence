@@ -1,0 +1,13 @@
+library(RoughSets)
+file=("C:\\Users\\HP\\Desktop\\Nowy folder\\diabetes.csv")
+sep=(';')
+df=read.table(file=file,header=T,sep=sep)
+dt = SF.asDecisionTable(dataset = df,decision.attr = 13,indx.nominal = c(1:12))
+ind = BC.IND.relation.RST(dt,c(1:12))
+app =  BC.LU.approximation.RST(dt,ind) 
+boundary = BC.boundary.reg.RST(dt, app)
+positive = BC.positive.reg.RST(dt,app)
+dm=BC.discernibility.mat.RST(dt, return.matrix=TRUE)
+reducts = FS.all.reducts.computation(dm)
+rss=RI.LEM2Rules.RST(dt) 
+                            
