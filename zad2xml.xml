@@ -1,0 +1,810 @@
+<?xml version="1.0" ?>
+<MLDBIF>
+<DB>
+
+<DESCRIPTION>
+	<SHORT></SHORT>
+	<DETAILED></DETAILED>
+</DESCRIPTION>
+
+<!-- Neural Network Definition -->
+<NETWORK>
+
+	<!-- Node Definitions -->
+
+	<NODE>
+		<NAME>sepal_lenght</NAME>
+		<WEIGHT>0.11111111111111119</WEIGHT>
+		<XPOS>7728.0615</XPOS>
+		<YPOS>5041.2075</YPOS>
+		<INDEX>0</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>sepal_width</NAME>
+		<WEIGHT>-0.7272727272727274</WEIGHT>
+		<XPOS>7888.354</XPOS>
+		<YPOS>5041.2075</YPOS>
+		<INDEX>1</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>petal_lenght</NAME>
+		<WEIGHT>0.35593220338983045</WEIGHT>
+		<XPOS>8048.646</XPOS>
+		<YPOS>5041.2075</YPOS>
+		<INDEX>2</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>petal_width</NAME>
+		<WEIGHT>0.4999999999999999</WEIGHT>
+		<XPOS>8208.938</XPOS>
+		<YPOS>5041.2075</YPOS>
+		<INDEX>3</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Hidden 1</NAME>
+		<WEIGHT>-0.6515435202888703</WEIGHT>
+		<XPOS>7928.0615</XPOS>
+		<YPOS>5204.5</YPOS>
+		<INDEX>4</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Iris-setosa</NAME>
+		<WEIGHT>-2.5010283200084005</WEIGHT>
+		<XPOS>7928.0615</XPOS>
+		<YPOS>5325.7925</YPOS>
+		<INDEX>5</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+
+	<!-- Edge Definitions -->
+
+	<EDGE>
+		<STARTINDEX>0</STARTINDEX>
+		<ENDINDEX>4</ENDINDEX>
+		<WEIGHT>-0.7881018398387631</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>1</STARTINDEX>
+		<ENDINDEX>4</ENDINDEX>
+		<WEIGHT>1.2579825837969294</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>2</STARTINDEX>
+		<ENDINDEX>4</ENDINDEX>
+		<WEIGHT>-1.316616786469238</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>3</STARTINDEX>
+		<ENDINDEX>4</ENDINDEX>
+		<WEIGHT>-3.1232062199998256</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>4</STARTINDEX>
+		<ENDINDEX>5</ENDINDEX>
+		<WEIGHT>5.269732334410668</WEIGHT>
+	</EDGE>
+
+</NETWORK>
+
+<!-- Example Database -->
+<EXAMPLES>
+
+	<!-- Parameter Definition -->
+	<PARAMETER type=input>sepal_lenght</PARAMETER>
+	<PARAMETER type=input>sepal_width</PARAMETER>
+	<PARAMETER type=input>petal_lenght</PARAMETER>
+	<PARAMETER type=input>petal_width</PARAMETER>
+	<PARAMETER type=output>Iris-setosa</PARAMETER>
+
+	<!-- Examples -->
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.5</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.9</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.7</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.6</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.4</VALUE>
+		<VALUE parameter="sepal_width">3.9</VALUE>
+		<VALUE parameter="petal_lenght">1.7</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.6</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.9</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.1</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.8</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.3</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">1.1</VALUE>
+		<VALUE parameter="petal_width">0.1</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.8</VALUE>
+		<VALUE parameter="sepal_width">4.0</VALUE>
+		<VALUE parameter="petal_lenght">1.2</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.7</VALUE>
+		<VALUE parameter="sepal_width">4.4</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.5</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.4</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.7</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.7</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.6</VALUE>
+		<VALUE parameter="sepal_width">3.6</VALUE>
+		<VALUE parameter="petal_lenght">1.0</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.2</VALUE>
+		<VALUE parameter="sepal_width">3.5</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.2</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.7</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.8</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.2</VALUE>
+		<VALUE parameter="sepal_width">4.1</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.1</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.5</VALUE>
+		<VALUE parameter="sepal_width">4.2</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.9</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.1</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">1.2</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.5</VALUE>
+		<VALUE parameter="sepal_width">3.5</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.9</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.1</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.4</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.5</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.4</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.5</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.6</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.8</VALUE>
+		<VALUE parameter="petal_lenght">1.9</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.8</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">4.6</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.3</VALUE>
+		<VALUE parameter="sepal_width">3.7</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.3</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.3</VALUE>
+		<VALUE parameter="sepal_width">3.3</VALUE>
+		<VALUE parameter="petal_lenght">6.0</VALUE>
+		<VALUE parameter="petal_width">2.5</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.1</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.9</VALUE>
+		<VALUE parameter="petal_width">2.1</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.3</VALUE>
+		<VALUE parameter="sepal_width">2.9</VALUE>
+		<VALUE parameter="petal_lenght">5.6</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.6</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">6.6</VALUE>
+		<VALUE parameter="petal_width">2.1</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.3</VALUE>
+		<VALUE parameter="sepal_width">2.9</VALUE>
+		<VALUE parameter="petal_lenght">6.3</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.4</VALUE>
+		<VALUE parameter="sepal_width">2.7</VALUE>
+		<VALUE parameter="petal_lenght">5.3</VALUE>
+		<VALUE parameter="petal_width">1.9</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.8</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.5</VALUE>
+		<VALUE parameter="petal_width">2.1</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.7</VALUE>
+		<VALUE parameter="sepal_width">2.5</VALUE>
+		<VALUE parameter="petal_lenght">5.0</VALUE>
+		<VALUE parameter="petal_width">2.0</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.8</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">2.4</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.4</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">5.3</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.7</VALUE>
+		<VALUE parameter="sepal_width">2.6</VALUE>
+		<VALUE parameter="petal_lenght">6.9</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.0</VALUE>
+		<VALUE parameter="sepal_width">2.2</VALUE>
+		<VALUE parameter="petal_lenght">5.0</VALUE>
+		<VALUE parameter="petal_width">1.5</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.6</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">4.9</VALUE>
+		<VALUE parameter="petal_width">2.0</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.3</VALUE>
+		<VALUE parameter="sepal_width">2.7</VALUE>
+		<VALUE parameter="petal_lenght">4.9</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.2</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">6.0</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.1</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">4.9</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.4</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">5.6</VALUE>
+		<VALUE parameter="petal_width">2.1</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.9</VALUE>
+		<VALUE parameter="sepal_width">3.8</VALUE>
+		<VALUE parameter="petal_lenght">6.4</VALUE>
+		<VALUE parameter="petal_width">2.0</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.4</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">5.6</VALUE>
+		<VALUE parameter="petal_width">2.2</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.3</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">1.5</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">7.7</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">6.1</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.0</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">4.8</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.9</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">5.4</VALUE>
+		<VALUE parameter="petal_width">2.1</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.7</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">5.6</VALUE>
+		<VALUE parameter="petal_width">2.4</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.9</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.8</VALUE>
+		<VALUE parameter="sepal_width">2.7</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">1.9</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.8</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">5.9</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.7</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.2</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.5</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.2</VALUE>
+		<VALUE parameter="petal_width">2.0</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">6.2</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">5.4</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="sepal_lenght">5.9</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.6</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.0</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">4.4</VALUE>
+		<VALUE parameter="sepal_width">2.9</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.4</VALUE>
+		<VALUE parameter="sepal_width">3.7</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">4.8</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">1.4</VALUE>
+		<VALUE parameter="petal_width">0.1</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.4</VALUE>
+		<VALUE parameter="sepal_width">3.9</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.7</VALUE>
+		<VALUE parameter="sepal_width">3.8</VALUE>
+		<VALUE parameter="petal_lenght">1.7</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.8</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.3</VALUE>
+		<VALUE parameter="petal_lenght">1.7</VALUE>
+		<VALUE parameter="petal_width">0.5</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">4.8</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.9</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.4</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.4</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">1.5</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">4.5</VALUE>
+		<VALUE parameter="sepal_width">2.3</VALUE>
+		<VALUE parameter="petal_lenght">1.3</VALUE>
+		<VALUE parameter="petal_width">0.3</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.1</VALUE>
+		<VALUE parameter="sepal_width">3.8</VALUE>
+		<VALUE parameter="petal_lenght">1.6</VALUE>
+		<VALUE parameter="petal_width">0.2</VALUE>
+		<VALUE parameter="Iris-setosa">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">5.8</VALUE>
+		<VALUE parameter="sepal_width">2.7</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">1.9</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.5</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.8</VALUE>
+		<VALUE parameter="petal_width">2.2</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">4.9</VALUE>
+		<VALUE parameter="sepal_width">2.5</VALUE>
+		<VALUE parameter="petal_lenght">4.5</VALUE>
+		<VALUE parameter="petal_width">1.7</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.7</VALUE>
+		<VALUE parameter="sepal_width">2.5</VALUE>
+		<VALUE parameter="petal_lenght">5.8</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">7.2</VALUE>
+		<VALUE parameter="sepal_width">3.6</VALUE>
+		<VALUE parameter="petal_lenght">6.1</VALUE>
+		<VALUE parameter="petal_width">2.5</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.5</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">5.1</VALUE>
+		<VALUE parameter="petal_width">2.0</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.5</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.5</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">7.7</VALUE>
+		<VALUE parameter="sepal_width">3.8</VALUE>
+		<VALUE parameter="petal_lenght">6.7</VALUE>
+		<VALUE parameter="petal_width">2.2</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.9</VALUE>
+		<VALUE parameter="sepal_width">3.2</VALUE>
+		<VALUE parameter="petal_lenght">5.7</VALUE>
+		<VALUE parameter="petal_width">2.3</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">7.7</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">6.7</VALUE>
+		<VALUE parameter="petal_width">2.0</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.7</VALUE>
+		<VALUE parameter="sepal_width">3.3</VALUE>
+		<VALUE parameter="petal_lenght">5.7</VALUE>
+		<VALUE parameter="petal_width">2.1</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.2</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">4.8</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">7.2</VALUE>
+		<VALUE parameter="sepal_width">3.0</VALUE>
+		<VALUE parameter="petal_lenght">5.8</VALUE>
+		<VALUE parameter="petal_width">1.6</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">7.4</VALUE>
+		<VALUE parameter="sepal_width">2.8</VALUE>
+		<VALUE parameter="petal_lenght">6.1</VALUE>
+		<VALUE parameter="petal_width">1.9</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.1</VALUE>
+		<VALUE parameter="sepal_width">2.6</VALUE>
+		<VALUE parameter="petal_lenght">5.6</VALUE>
+		<VALUE parameter="petal_width">1.4</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.3</VALUE>
+		<VALUE parameter="sepal_width">3.4</VALUE>
+		<VALUE parameter="petal_lenght">5.6</VALUE>
+		<VALUE parameter="petal_width">2.4</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.4</VALUE>
+		<VALUE parameter="sepal_width">3.1</VALUE>
+		<VALUE parameter="petal_lenght">5.5</VALUE>
+		<VALUE parameter="petal_width">1.8</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.7</VALUE>
+		<VALUE parameter="sepal_width">3.3</VALUE>
+		<VALUE parameter="petal_lenght">5.7</VALUE>
+		<VALUE parameter="petal_width">2.5</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="sepal_lenght">6.3</VALUE>
+		<VALUE parameter="sepal_width">2.5</VALUE>
+		<VALUE parameter="petal_lenght">5.0</VALUE>
+		<VALUE parameter="petal_width">1.9</VALUE>
+		<VALUE parameter="Iris-setosa">0.0</VALUE>
+	</EXAMPLE>
+</EXAMPLES>
+
+</DB>
+</MLDBIF>
+
+

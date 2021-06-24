@@ -1,0 +1,329 @@
+<?xml version="1.0" ?>
+<MLDBIF>
+<DB>
+
+<DESCRIPTION>
+	<SHORT></SHORT>
+	<DETAILED></DETAILED>
+</DESCRIPTION>
+
+<!-- Neural Network Definition -->
+<NETWORK>
+
+	<!-- Node Definitions -->
+
+	<NODE>
+		<NAME>Doœwiadczenie</NAME>
+		<WEIGHT>0.9073954896905736</WEIGHT>
+		<XPOS>7575.8833</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>0</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Wiedza</NAME>
+		<WEIGHT>0.3194934458906906</WEIGHT>
+		<XPOS>7688.0596</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>1</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Umiejêtnoœci</NAME>
+		<WEIGHT>-0.7384473699066625</WEIGHT>
+		<XPOS>7800.236</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>2</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Ukoñczone kursy</NAME>
+		<WEIGHT>-0.7548274111824831</WEIGHT>
+		<XPOS>7912.412</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>3</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Punktualnoœæ</NAME>
+		<WEIGHT>0.8119480399631582</WEIGHT>
+		<XPOS>8024.588</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>4</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Komunikatywnoœæ</NAME>
+		<WEIGHT>-0.3782511728084621</WEIGHT>
+		<XPOS>8136.7646</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>5</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Otwartoœæ na naukê</NAME>
+		<WEIGHT>-0.2680338922657728</WEIGHT>
+		<XPOS>8248.94</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>6</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Kreatywnoœæ</NAME>
+		<WEIGHT>0.29654230848131813</WEIGHT>
+		<XPOS>8361.117</XPOS>
+		<YPOS>5087.3237</YPOS>
+		<INDEX>7</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Hidden 1</NAME>
+		<WEIGHT>0.4754014879224835</WEIGHT>
+		<XPOS>7795.8833</XPOS>
+		<YPOS>5266.5</YPOS>
+		<INDEX>8</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Hidden 2</NAME>
+		<WEIGHT>-0.6807452409725363</WEIGHT>
+		<XPOS>8116.0596</XPOS>
+		<YPOS>5236.5</YPOS>
+		<INDEX>9</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+	<NODE>
+		<NAME>Wynik</NAME>
+		<WEIGHT>-0.447606749938549</WEIGHT>
+		<XPOS>7962.8833</XPOS>
+		<YPOS>5338.6763</YPOS>
+		<INDEX>10</INDEX>
+		<FUNCTION>sigmoid</FUNCTION>
+	</NODE>
+
+	<!-- Edge Definitions -->
+
+	<EDGE>
+		<STARTINDEX>0</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>-0.271786264812816</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>1</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>0.893160172018955</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>2</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>-0.11959937191445591</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>3</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>0.879475515736327</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>4</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>-0.5376111249523663</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>5</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>-0.44556902260991604</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>6</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>0.6138695954951237</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>7</STARTINDEX>
+		<ENDINDEX>8</ENDINDEX>
+		<WEIGHT>0.6215455441048285</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>0</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>-0.31310915068815404</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>1</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>-0.5086094730988089</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>2</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>0.2103717371178575</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>3</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>0.9586428971611336</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>4</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>0.6323686517537259</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>5</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>-0.021684224055892987</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>6</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>-0.13688788947957797</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>7</STARTINDEX>
+		<ENDINDEX>9</ENDINDEX>
+		<WEIGHT>-0.3804777453111705</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>8</STARTINDEX>
+		<ENDINDEX>10</ENDINDEX>
+		<WEIGHT>-0.07245374951680605</WEIGHT>
+	</EDGE>
+	<EDGE>
+		<STARTINDEX>9</STARTINDEX>
+		<ENDINDEX>10</ENDINDEX>
+		<WEIGHT>-0.2807928665057271</WEIGHT>
+	</EDGE>
+
+</NETWORK>
+
+<!-- Example Database -->
+<EXAMPLES>
+
+	<!-- Parameter Definition -->
+	<PARAMETER type=input>Doœwiadczenie</PARAMETER>
+	<PARAMETER type=input>Wiedza</PARAMETER>
+	<PARAMETER type=input>Umiejêtnoœci</PARAMETER>
+	<PARAMETER type=input>Ukoñczone kursy</PARAMETER>
+	<PARAMETER type=input>Punktualnoœæ</PARAMETER>
+	<PARAMETER type=input>Komunikatywnoœæ</PARAMETER>
+	<PARAMETER type=input>Otwartoœæ na naukê</PARAMETER>
+	<PARAMETER type=input>Kreatywnoœæ</PARAMETER>
+	<PARAMETER type=output>Wynik</PARAMETER>
+
+	<!-- Examples -->
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">1.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">1.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">0.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">0.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">0.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">1.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">0.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">0.0</VALUE>
+		<VALUE parameter="Wiedza">0.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">0.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">1.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">1.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">0.0</VALUE>
+		<VALUE parameter="Wiedza">0.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">0.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">1.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">0.0</VALUE>
+		<VALUE parameter="Wynik">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">1.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">1.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">1.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">0.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">0.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">1.0</VALUE>
+		<VALUE parameter="Wiedza">0.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">1.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">0.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=training>
+		<VALUE parameter="Doœwiadczenie">1.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">1.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">0.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">1.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">0.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">0.0</VALUE>
+		<VALUE parameter="Wynik">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="Doœwiadczenie">0.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">1.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">0.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">1.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="Doœwiadczenie">0.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">0.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">0.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">0.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">0.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">1.0</VALUE>
+		<VALUE parameter="Wynik">0.0</VALUE>
+	</EXAMPLE>
+	<EXAMPLE type=test>
+		<VALUE parameter="Doœwiadczenie">0.0</VALUE>
+		<VALUE parameter="Wiedza">1.0</VALUE>
+		<VALUE parameter="Umiejêtnoœci">1.0</VALUE>
+		<VALUE parameter="Ukoñczone kursy">1.0</VALUE>
+		<VALUE parameter="Punktualnoœæ">1.0</VALUE>
+		<VALUE parameter="Komunikatywnoœæ">0.0</VALUE>
+		<VALUE parameter="Otwartoœæ na naukê">1.0</VALUE>
+		<VALUE parameter="Kreatywnoœæ">0.0</VALUE>
+		<VALUE parameter="Wynik">1.0</VALUE>
+	</EXAMPLE>
+</EXAMPLES>
+
+</DB>
+</MLDBIF>
+
+
