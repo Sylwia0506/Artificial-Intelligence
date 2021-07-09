@@ -1,6 +1,6 @@
 library(GA)
  
-#ustawienie parametrów algorytmu ewolucyjnego
+#ustawienie parametrÃ³w algorytmu ewolucyjnego
 
 min_x = -2
 max_x = 2
@@ -32,7 +32,7 @@ f <- outer(x, y, Funkcjaa)
 persp3D(x, y, f , theta =50, phi =20, col.palette =bl2gr.colors)
 filled.contour(x, y, f, color.palette = bl2gr.colors)
 
-# funkcja monitoruj¹ca dzia³anie algorytmu
+# funkcja monitorujÄ…ca dziaÅ‚anie algorytmu
 
 monitor <- function(obj)
 {
@@ -57,7 +57,7 @@ GA <- ga(
   ,seed = seed
 )
 
-#wyœwietlanie podsumowanie
+#wyÅ›wietlanie podsumowanie
 summary(GA)
 
 # wykres - najlepiej dopasowany osobnik
@@ -66,6 +66,6 @@ abline(v = GA@solution, lty =3 )
 #wykres - mediana
 plot(GA)
 
-#wyœwietlenie wartoœci najlepszego przystosowania osiagniêtego w ka¿dej iteracji
+#wyÅ›wietlenie wartoÅ›ci najlepszego przystosowania osiagniÄ™tego w kaÅ¼dej iteracji
 GA@bestSol
 
